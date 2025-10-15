@@ -88,7 +88,7 @@ run();
 
 ## ✨ Ejemplo de uso (NestJS)
 
-# 1. Registrar módulo en `app.module.ts`
+### 1. Registrar módulo en `app.module.ts`
 
 ```typescript
 // app.module.ts
@@ -107,7 +107,7 @@ import { GcsModule } from '@elxxx/google-storage-easy';
 export class AppModule {}
 ```
 
-# 2. Inyectar en un servicio
+### 2. Inyectar en un servicio
 
 ```typescript
 // ejemplo.service.ts
