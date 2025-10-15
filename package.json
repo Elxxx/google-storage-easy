@@ -1,0 +1,44 @@
+{
+  "name": "@elxxx/google-storage-easy",
+  "version": "1.0.0",
+  "description": "Cliente simple y tipado para subir, bajar, listar y obtener archivos en Google Cloud Storage",
+  "license": "MIT",
+  "author": "Elxxx",
+  "keywords": [
+    "google-cloud-storage",
+    "gcs",
+    "upload",
+    "node",
+    "nestjs",
+    "typescript",
+    "cloud"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Elxxx/google-storage-easy.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Elxxx/google-storage-easy/issues"
+  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "type": "commonjs",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "clean": "rimraf dist",
+    "prepublishOnly": "npm run clean && npm run build",
+    "lint": "eslint . --ext .ts"
+  },
+  "dependencies": {
+    "@google-cloud/storage": "^7.10.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "typescript": "^5.5.0",
+    "eslint": "^9.0.0",
+    "rimraf": "^6.0.0"
+  }
+}
